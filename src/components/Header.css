@@ -4,7 +4,7 @@
 .switch {
     position: relative;
     display: inline-block;
-    width: 40px;
+    width: 55px;
     height: 24px;
   }
   
@@ -23,36 +23,63 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #3A3A3A;
     -webkit-transition: .4s;
     transition: .4s;
   }
+
   
   .slider:before {
     position: absolute;
     content: "";
-    height: 16px;
-    width: 16px;
+    height: 15px;
+    width: 15px;
     left: 4px;
-    bottom: 4px;
-    background-color: rgb(27, 227, 140);
+    bottom: 5px;
+    background-color: #FFE86E;
     -webkit-transition: .4s;
     transition: .4s;
   }
+
+  .slider-two:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 8px;
+    bottom: 6px;
+    background-color: #3A3A3A;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 20px;
+  }
+
   
   input:checked + .slider {
-    background-color: #05672c;
+    background-color: #8F88FF;
   }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #05672c;
-  }
+
+
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(16px);
-    -ms-transform: translateX(16px);
-    transform: translateX(16px);
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+    left: 6px;
   }
+
+  input:checked + .slider-two:before {
+    background-color: #FFE86E;
+  }
+
+  input:checked + .slider-two:before {
+    
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+    transition: .4s;
+  }
+ 
   
   /* Rounded sliders */
   .slider.round {
@@ -63,12 +90,31 @@
     border-radius: 50%;
   }
 
+  .slider-two.round-two {
+    border-radius: 34px;
+  }
+  
+  .slider-two.round-two:before {
+    border-radius: 50%;
+  }
+
+    
 .header {
   background: linear-gradient(
     to right,
     #4731D3 0%,
-    #4731D3 70%,
-    #CBF281 70%,
+    #4731D3 72%,
+    #CBF281 72%,
     #CBF281 100%
+  );
+}
+
+.header.koyu {
+  background: linear-gradient(
+    to right,
+    #171043 0%,
+    #171043 72%,
+    #211F0B 72%,
+    #211F0B 100%
   );
 }

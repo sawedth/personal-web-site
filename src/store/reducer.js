@@ -10,21 +10,26 @@ const initialState = {
     logos: [js, react, redux, node, vs, figma],
     tr: {
         header: {
-            translate: "TRANSLATE TO ENGLISH",
-            head: "Ben Frontend Developer'ım...",
+            translate: "TRANSLATE TO ",
+            languageName: "ENGLISH",
+            head: "Ben Bir Frontend Developer'ım...",
             body: "...harika kullanıcı deneyimleri sunan, sağlam ve ölçeklenebilir ön uç ürünleri tasarlamayı seven."
         },
         profile: {
             head: "Profil",
             info: "Bilgilerim",
             date: "Doğum Tarihi",
-            city: "İkamet Şehri",
-            education: "Eğitim Durumu",
+            city: "İkamet Şehrim",
+            education: "Eğitim Durumum",
             uni: "Hacettepe Ünv. Biyoloji Lisans, 2016",
-            preffered: "Tercih Ettiği Rol",
+            preferred: "Tercih Ettiğim Rol",
             about: "Hakkımda"
         },
-        projects: ["Kullanıcılarınızın hangi çerezleri kabul edip reddedeceklerini seçmelerine olanak tanıyan basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve bir NPM paketi olarak mevcuttur ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılar." , "Kullanıcılarınızın hangi çerezleri kabul edip reddedeceklerini seçmelerine olanak tanıyan basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve bir NPM paketi olarak mevcuttur ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılar."] 
+        projects: ["Kullanıcılarınızın hangi çerezleri kabul edip reddedeceklerini seçmelerine olanak tanıyan basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve bir NPM paketi olarak mevcuttur ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılar." , "Kullanıcılarınızın hangi çerezleri kabul edip reddedeceklerini seçmelerine olanak tanıyan basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve bir NPM paketi olarak mevcuttur ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılar."],
+        footer: {
+            header: "Bana bir mesaj yollayın!",
+            body: "Sorunuz ya da bir teklifiniz mi var? Yoksa sadece merhaba mı demek istiyorusunuz? Hiç beklemeyin!"
+        }
     }  
 }
 
