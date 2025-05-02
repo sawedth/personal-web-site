@@ -1,0 +1,26 @@
+@media (max-width: 1300px) {
+    .projects {
+        padding-left: 14%;
+        padding-right: 14%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .projects {
+        padding-left: 18%;
+        padding-right: 18%;
+    }
+}
+
+@media (max-width: 980px) {
+    .projects-card {
+        flex-wrap: wrap;
+    }
+    .projects-card-photo {
+        width: 100%;
+        margin: auto;
+    }
+    .view-site{
+        margin-top: 1rem;
+    }
+}

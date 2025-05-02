@@ -1,0 +1,33 @@
+@media (max-width: 1300px) {
+    .skills {
+        padding-left: 14%;
+        padding-right: 14%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .skills {
+        padding-left: 18%;
+        padding-right: 18%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .skills-body {
+        flex-direction: column;
+        width: 100%;
+    }
+    .skills-all{
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .skill-img{
+        width: 90px;
+        height: 90px;
+    }
+    .skill-text{
+        font-size: 16px;
+    }
+}

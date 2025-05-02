@@ -1,0 +1,44 @@
+@media (max-width: 1300px) {
+    .profile {
+        padding-left: 14%;
+        padding-right: 14%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .profile {
+        padding-left: 18%;
+        padding-right: 18%;
+    }
+}
+
+@media (max-width: 1180px) {
+    .profile{
+        min-height: 620px;
+    }
+    .profile-body {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 950px) {
+    .profile-working{
+        height: 200px;
+        width:  200px;
+    }
+    .profile-body {
+        align-items: center;
+    }
+}
+
+@media (max-width: 809px) {
+    .profile-working{
+        height: 200px;
+        width:  400px;
+        margin: auto;
+    }
+    .profile{
+        min-height: 800px;
+    }
+}
+    

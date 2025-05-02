@@ -3,6 +3,7 @@ import working from "../assets/working.png"
 import { ModeContext } from '../contexts/modeContext';
 import { useContext } from 'react';
 import { useSelector } from 'react-redux';
+import './Profile.css'
 const Profiled = styled.div`
     
     height: 552px
@@ -18,11 +19,11 @@ export default function Profile() {
     const preferred = useSelector((store) => store.tr.profile.preferred);
     const about = useSelector((store) => store.tr.profile.about);
     return (
-        <Profiled className={"px-[16%] py-[5%] text-[48px] text-[#CBF281]  " + (mode ? "bg-[#4731D3]" : "bg-[#171043]")}>
+        <Profiled className={"px-[16%] py-[5%] text-[48px] text-[#CBF281] profile " + (mode ? "bg-[#4731D3]" : "bg-[#171043]")}>
 
             <h1 className="text-left pb-[1rem]">{language ? "Profile" : head}</h1>
 
-            <div className="flex w-[100%] text-left ">
+            <div className="flex w-[100%] text-left profile-body">
                 <div className="flex flex-col flex-wrap min-w-[300px] w-[40%] justify-between max-h-[400px]">
                     <h1 className=" text-[28px] text-white w-[250px] mb-[.5rem]">{language? "Basic Information":info}</h1>
                     <div className="flex ">
@@ -42,7 +43,7 @@ export default function Profile() {
                         <p className="text-[16px] text-white">Frontend, UI</p>
                     </div>
                 </div>
-                <img alt="working" src={working} className='w-[300px] h-[290px] object-cover rounded-[5px] mx-[36px]' />
+                <img alt="working" src={working} className='w-[300px] h-[290px] object-cover rounded-[5px] mx-[36px] profile-working' />
                 <div className="max-h-[400px]">
                     <h1 className=" text-[28px] text-white mb-[1rem]">{language ? "About Me" : about}</h1>
                     <p className="text-[16px] text-white mb-[1rem]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia. </p>
