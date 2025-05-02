@@ -30,7 +30,7 @@ export default function Header() {
             <div className='personal-info h-[50%] flex flex-row justify-between mt-[2rem] '>
                 <div className='personal-exp pt-[4rem] text-left flex flex-col w-[60%] justify-between m-[0px]'>
                     <h1 className='text-[#CBF281] text-[54px] text-base/14 font-bold header-head'>{language ? "I am a Frontend Developer..." : head}</h1>
-                    <p className='text-[white] text-[24px] header-para'> {language ? "I...who likes to craft solid and scalable frontend products with great user experiences." : body}</p>
+                    <p className='text-[white] text-[24px] header-para'> {language ? "...who likes to craft solid and scalable frontend products with great user experiences." : body}</p>
                     <div className='header-buttons'>
                         <button className={(mode ? "bg-white text-[#4731D3] " : "bg-[#252128] text-[#FFFFFF] ") + ' mr-[1rem] py-[12px] pr-[20px] pl-[12px]  cursor-pointer  text-[18px] border rounded-[6px]'}><FontAwesomeIcon icon={faGithub} className='fa-xl pr-[5px]'/>Github</button>
                         <button className={(mode ? "bg-white text-[#4731D3] " : "bg-[#252128] text-[#FFFFFF] ") + '  py-[12px] pr-[20px] pl-[12px]  cursor-pointer  text-[18px] border rounded-[6px]'}><FontAwesomeIcon icon={faLinkedin} className='fa-xl pr-[5px]'/>Linkedin</button>

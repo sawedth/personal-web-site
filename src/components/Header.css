@@ -202,4 +202,8 @@
   .header-lan{
     margin-right: 5px;
   }
+  .header-photo{
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
